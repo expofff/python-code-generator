@@ -1,0 +1,83 @@
+{
+  "name": "python-code-generator",
+  "displayName": "Python Code Generator",
+  "description": "Generates Python code templates",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "python-code-generator.insertIf",
+        "title": "Insert if statement",
+        "category": "Python Generator"
+      },
+      {
+        "command": "python-code-generator.toUpperCase",
+        "title": "Convert to UPPERCASE",
+        "category": "Python Generator"
+      },
+      {
+        "command": "python-code-generator.insertFor",
+        "title": "Insert for loop",
+        "category": "Python Generator"
+      },
+      {
+        "command": "python-code-generator.insertWhile",
+        "title": "Insert while loop",
+        "category": "Python Generator"
+      },
+      {
+        "command": "python-code-generator.insertFunction",
+        "title": "Insert function",
+        "category": "Python Generator"
+      },
+      {
+        "command": "python-code-generator.insertClass",
+        "title": "Insert class",
+        "category": "Python Generator"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "python-code-generator.insertIf",
+        "key": "ctrl+shift+i",
+        "mac": "cmd+shift+i",
+        "when": "editorLangId == python"
+      },
+      {
+        "command": "python-code-generator.toUpperCase",
+        "key": "ctrl+shift+u",
+        "mac": "cmd+shift+u",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "python-code-generator.insertFor",
+        "key": "ctrl+shift+f",
+        "mac": "cmd+shift+f",
+        "when": "editorLangId == python"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "typescript": "^4.7.4"
+  }
+}
