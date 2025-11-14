@@ -1,6 +1,6 @@
 # Python Code Generator
 
-**Автор:** [Злотин Ефим Дмитриевич] [501620]  
+**Автор:** Злотин Ефим Дмитриевич  501620  
 **IDE:** Visual Studio Code  
 **Язык:** Python
 
@@ -16,8 +16,18 @@
 - Вставка class
 
 ## Горячие клавиши
+Для MacOS:
 - Cmd+Shift+I - вставить if
 - Cmd+Shift+F - вставить for
 - Cmd+Shift+U - вставить UPPERCASE
 
+Для Windows:
+- Ctrl+Shift+I - вставить if
+- Ctrl+Shift+F - вставить for
+- Ctrl+Shift+U - UPPERCASE выделенного текста
 
+## Установка для разработки
+
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/expofff/python-code-generator.git
