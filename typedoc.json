@@ -1,0 +1,9 @@
+{
+  "entryPoints": ["src/extension.ts"],
+  "out": "docs",
+  "name": "Python Code Generator API",
+  "includeVersion": true,
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "theme": "default"
+}
